@@ -1,0 +1,44 @@
+---
+const { works, drafts } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<section class="section" id="works">
+  <div class="section-head">
+    <p class="section-kicker">Featured Works / 得意作品</p>
+    <h2><span data-zh>已驗證作品</span><span data-en>Verified works</span></h2>
+    <p><span data-zh>只有能回溯標題、作者與外部頁面的作品會顯示連結。</span><span data-en>Links appear only when title, authorship, and external source have been verified.</span></p>
+  </div>
+  <div class="work-grid verified">
+    {works.map((work) => (
+      <article class="work-card">
+        <img src={`${base}${work.cover_image}`} alt={`${work.title_en} cover image`} loading="lazy" />
+        <div class="work-copy">
+          <p class="meta">{work.publication} · {work.issue ? `Issue ${work.issue}` : work.year}</p>
+          <h3><span data-zh>{work.title_zh}</span><span data-en>{work.title_en}</span></h3>
+          <p><span data-zh>{work.short_description_zh}</span><span data-en>{work.short_description_en}</span></p>
+          <a href={work.external_url} target="_blank" rel="noreferrer">
+            <span data-zh>查看作品</span><span data-en>Read article</span>
+          </a>
+          <p class="source">{work.source_note}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+
+  <div class="draft-works">
+    <div class="section-head compact">
+      <h2><span data-zh>待驗證封面資料</span><span data-en>Cover candidates pending verification</span></h2>
+      <p><span data-zh>這些來自使用者提供 PPT，尚未確認公開 URL 與作者資訊，因此不提供外部連結。</span><span data-en>These are extracted from the user-provided PPT. External URLs and authorship still need verification, so no outbound links are shown.</span></p>
+    </div>
+    <div class="masonry">
+      {drafts.map((work) => (
+        <article class="draft-card">
+          <img src={`${base}${work.cover_image}`} alt={`${work.title_en} cover candidate from PPT`} loading="lazy" />
+          <h3><span data-zh>{work.title_zh}</span><span data-en>{work.title_en}</span></h3>
+          <p>{work.publication}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>

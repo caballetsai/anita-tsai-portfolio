@@ -1,0 +1,23 @@
+---
+const { items } = Astro.props;
+---
+
+<section class="section" id="experience">
+  <div class="section-head">
+    <p class="section-kicker">Experience / 經歷</p>
+    <h2><span data-zh>從新聞室到 CEO 學習場景</span><span data-en>From newsroom reporting to CEO learning products</span></h2>
+  </div>
+  <div class="timeline">
+    {items.map((item) => (
+      <article class="timeline-item">
+        <div class="timeline-date">{item.years}</div>
+        <div class="timeline-card">
+          <h3><span data-zh>{item.title_zh}</span><span data-en>{item.title_en}</span></h3>
+          <p class="organization">{item.organization}</p>
+          <p><span data-zh>{item.description_zh}</span><span data-en>{item.description_en}</span></p>
+          <p class="source">Source: {item.source}</p>
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

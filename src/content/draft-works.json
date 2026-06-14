@@ -1,0 +1,146 @@
+[
+  {
+    "title_zh": "太空商機",
+    "title_en": "Space Business",
+    "category": "technology",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/technology-slide-02-image14.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "聲控經濟",
+    "title_en": "Voice Economy",
+    "category": "technology",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/technology-slide-02-image15.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "狗開車時代來了",
+    "title_en": "The Driverless Era Arrives",
+    "category": "technology",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/technology-slide-02-image16.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "手機接班人 VR",
+    "title_en": "VR as the Smartphone Successor",
+    "category": "vr-blockchain-metaverse",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/vr-blockchain-metaverse-slide-03-image20.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "超貨幣",
+    "title_en": "Super Currency",
+    "category": "vr-blockchain-metaverse",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/vr-blockchain-metaverse-slide-03-image21.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "區塊鏈",
+    "title_en": "Blockchain",
+    "category": "vr-blockchain-metaverse",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/vr-blockchain-metaverse-slide-03-image22.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "元宇宙",
+    "title_en": "Metaverse",
+    "category": "vr-blockchain-metaverse",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/vr-blockchain-metaverse-slide-03-image23.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "小眾經濟",
+    "title_en": "Niche Economy",
+    "category": "social-trends",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/social-trends-slide-04-image25.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "訂閱經濟",
+    "title_en": "Subscription Economy",
+    "category": "social-trends",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/social-trends-slide-04-image26.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "共享經濟大革命",
+    "title_en": "The Sharing Economy Revolution",
+    "category": "social-trends",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/social-trends-slide-04-image29.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "黑洞經濟",
+    "title_en": "Black Hole Economy",
+    "category": "finance-macro",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/finance-macro-slide-05-image34.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "新冷戰時代",
+    "title_en": "A New Cold War Era",
+    "category": "finance-macro",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/finance-macro-slide-05-image36.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "藥命危機",
+    "title_en": "The Security Crisis in Taiwan's Generic Drug",
+    "category": "biotech-healthcare",
+    "publication": "財訊 Wealth Magazine",
+    "cover_image": "assets/covers/biotech-healthcare-slide-06-image37.webp",
+    "source_note": "PPT cover image and English bio award note; external URL pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "你的藥丸",
+    "title_en": "Your Pill",
+    "category": "biotech-healthcare",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/biotech-healthcare-slide-06-image40.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "疫苗戰爭",
+    "title_en": "Vaccine War",
+    "category": "biotech-healthcare",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/biotech-healthcare-slide-06-image41.webp",
+    "source_note": "PPT cover image; URL and authorship pending verification.",
+    "needs_verification": true
+  },
+  {
+    "title_zh": "國際人物與企業家訪談封面",
+    "title_en": "International Interview Cover Package",
+    "category": "interviews",
+    "publication": "商業周刊 Business Weekly",
+    "cover_image": "assets/covers/slide-slide-07-image44.webp",
+    "source_note": "PPT interview slide cover image; specific interview URL pending verification.",
+    "needs_verification": true
+  }
+]

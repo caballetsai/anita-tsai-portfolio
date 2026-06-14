@@ -1,0 +1,75 @@
+[
+  {
+    "id": "technology",
+    "label_zh": "科技",
+    "label_en": "Technology",
+    "description_zh": "從硬體、平台、聲控到太空商機，追蹤技術如何改變產業結構。",
+    "description_en": "From hardware and platforms to voice interfaces and space business, Anita tracks how technology reshapes industries.",
+    "covers": [
+      "assets/covers/technology-slide-02-image14.webp",
+      "assets/covers/technology-slide-02-image15.webp",
+      "assets/covers/technology-slide-02-image16.webp",
+      "assets/covers/technology-slide-02-image17.webp",
+      "assets/covers/technology-slide-02-image18.webp"
+    ]
+  },
+  {
+    "id": "vr-blockchain-metaverse",
+    "label_zh": "VR、區塊鏈與元宇宙",
+    "label_en": "VR, Blockchain & Metaverse",
+    "description_zh": "觀察新興技術從概念、資本熱潮到商業化落地的過程。",
+    "description_en": "Reports on emerging technologies as they move from concepts and capital cycles toward commercial adoption.",
+    "covers": [
+      "assets/covers/vr-blockchain-metaverse-slide-03-image20.webp",
+      "assets/covers/vr-blockchain-metaverse-slide-03-image21.webp",
+      "assets/covers/vr-blockchain-metaverse-slide-03-image22.webp",
+      "assets/covers/vr-blockchain-metaverse-slide-03-image23.webp",
+      "assets/covers/vr-blockchain-metaverse-slide-03-image24.webp"
+    ]
+  },
+  {
+    "id": "social-trends",
+    "label_zh": "社會趨勢",
+    "label_en": "Social Trends",
+    "description_zh": "以消費、工作、生活型態與人口變化切入，拆解商業社會的新需求。",
+    "description_en": "Explores shifts in consumption, work, lifestyles, and demographics, and what they mean for business.",
+    "covers": [
+      "assets/covers/social-trends-slide-04-image25.webp",
+      "assets/covers/social-trends-slide-04-image26.webp",
+      "assets/covers/social-trends-slide-04-image27.webp",
+      "assets/covers/social-trends-slide-04-image28.webp",
+      "assets/covers/social-trends-slide-04-image29.webp",
+      "assets/covers/social-trends-slide-04-image30.webp"
+    ]
+  },
+  {
+    "id": "finance-macro",
+    "label_zh": "金融與總經",
+    "label_en": "Finance & Macroeconomics",
+    "description_zh": "從金融市場、地緣政治到資本流動，建立讀者理解風險與機會的脈絡。",
+    "description_en": "Frames financial markets, geopolitics, and capital flows so readers can better understand risks and opportunities.",
+    "covers": [
+      "assets/covers/finance-macro-slide-05-image31.webp",
+      "assets/covers/finance-macro-slide-05-image32.webp",
+      "assets/covers/finance-macro-slide-05-image33.webp",
+      "assets/covers/finance-macro-slide-05-image34.webp",
+      "assets/covers/finance-macro-slide-05-image35.webp",
+      "assets/covers/finance-macro-slide-05-image36.webp"
+    ]
+  },
+  {
+    "id": "biotech-healthcare",
+    "label_zh": "生技醫療",
+    "label_en": "Biotech & Healthcare",
+    "description_zh": "報導藥品安全、抗癌治療、醫療科技與生技投資，兼顧科學、產業與制度。",
+    "description_en": "Covers drug safety, cancer treatment, medical technology, and biotech investing across science, industry, and regulation.",
+    "covers": [
+      "assets/covers/biotech-healthcare-slide-06-image37.webp",
+      "assets/covers/biotech-healthcare-slide-06-image38.webp",
+      "assets/covers/biotech-healthcare-slide-06-image39.webp",
+      "assets/covers/biotech-healthcare-slide-06-image40.webp",
+      "assets/covers/biotech-healthcare-slide-06-image41.webp",
+      "assets/covers/biotech-healthcare-slide-06-image42.webp"
+    ]
+  }
+]

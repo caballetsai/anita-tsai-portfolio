@@ -1,0 +1,21 @@
+---
+const { zh, en } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<section class="hero" id="home">
+  <div class="hero-media">
+    <img src={`${base}assets/profile/anita-tsai-profile.webp`} alt="Anita Tsai profile portrait" />
+  </div>
+  <div class="hero-copy">
+    <p class="eyebrow"><span data-zh>{zh.eyebrow}</span><span data-en>{en.eyebrow}</span></p>
+    <h1><span data-zh>{zh.name}</span><span data-en>{en.name}</span></h1>
+    <p class="role"><span data-zh>{zh.title}</span><span data-en>{en.title}</span></p>
+    <p class="lede"><span data-zh>{zh.subtitle}</span><span data-en>{en.subtitle}</span></p>
+    <div class="hero-actions">
+      <a class="button primary" href="#works"><span data-zh>觀看作品</span><span data-en>View Works</span></a>
+      <a class="button" href="#experience"><span data-zh>查看經歷</span><span data-en>View Experience</span></a>
+      <a class="button text" href="https://www.linkedin.com/in/anita-tsai-a547b89" target="_blank" rel="noreferrer">LinkedIn</a>
+    </div>
+  </div>
+</section>

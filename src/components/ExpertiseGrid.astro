@@ -1,0 +1,26 @@
+---
+const { items } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<section class="section" id="expertise">
+  <div class="section-head compact">
+    <p class="section-kicker">Expertise / 採訪領域</p>
+    <h2><span data-zh>跨科技、金融、社會與醫療的長線觀察</span><span data-en>Long-form observation across technology, finance, society, and healthcare</span></h2>
+  </div>
+  <div class="expertise-grid">
+    {items.map((item) => (
+      <article class="expertise-card">
+        <div>
+          <h3><span data-zh>{item.label_zh}</span><span data-en>{item.label_en}</span></h3>
+          <p><span data-zh>{item.description_zh}</span><span data-en>{item.description_en}</span></p>
+        </div>
+        <div class="cover-strip" aria-label={`${item.label_en} cover gallery`}>
+          {item.covers.slice(0, 6).map((cover) => (
+            <img src={`${base}${cover}`} alt={`${item.label_en} portfolio cover from user-provided PPT`} loading="lazy" />
+          ))}
+        </div>
+      </article>
+    ))}
+  </div>
+</section>

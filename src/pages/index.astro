@@ -1,0 +1,41 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import LanguageToggle from "../components/LanguageToggle.astro";
+import Hero from "../components/Hero.astro";
+import BioSection from "../components/BioSection.astro";
+import ExperienceTimeline from "../components/ExperienceTimeline.astro";
+import ExpertiseGrid from "../components/ExpertiseGrid.astro";
+import FeaturedWorks from "../components/FeaturedWorks.astro";
+import Interviewees from "../components/Interviewees.astro";
+import ContactFooter from "../components/ContactFooter.astro";
+
+import profileZh from "../content/profile.zh.json";
+import profileEn from "../content/profile.en.json";
+import experience from "../content/experience.json";
+import expertise from "../content/expertise.json";
+import works from "../content/works.json";
+import draftWorks from "../content/draft-works.json";
+import interviewees from "../content/interviewees.json";
+---
+
+<BaseLayout title="Anita Tsai / 蔡靚萱">
+  <header class="site-header">
+    <a href="#home" class="brand">Anita Tsai <span>蔡靚萱</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#works">Works</a>
+    </nav>
+    <LanguageToggle />
+  </header>
+  <main>
+    <Hero zh={profileZh} en={profileEn} />
+    <BioSection zh={profileZh} en={profileEn} />
+    <ExperienceTimeline items={experience} />
+    <ExpertiseGrid items={expertise} />
+    <FeaturedWorks works={works} drafts={draftWorks} />
+    <Interviewees names={interviewees} />
+  </main>
+  <ContactFooter />
+</BaseLayout>

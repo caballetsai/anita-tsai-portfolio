@@ -1,0 +1,16 @@
+---
+const { zh, en } = Astro.props;
+---
+
+<section class="section two-column" id="about">
+  <div>
+    <p class="section-kicker">About / 關於 Anita</p>
+    <h2><span data-zh>把趨勢翻成決策語言</span><span data-en>Translating trends into decision language</span></h2>
+  </div>
+  <div class="prose">
+    {zh.summary.map((item, index) => (
+      <p><span data-zh>{item}</span><span data-en>{en.summary[index]}</span></p>
+    ))}
+    <p class="highlight"><span data-zh>{zh.positioning}</span><span data-en>{en.positioning}</span></p>
+  </div>
+</section>
