@@ -14,7 +14,6 @@ import profileEn from "../content/profile.en.json";
 import experience from "../content/experience.json";
 import expertise from "../content/expertise.json";
 import works from "../content/works.json";
-import draftWorks from "../content/draft-works.json";
 import interviewees from "../content/interviewees.json";
 ---
 
@@ -34,7 +33,7 @@ import interviewees from "../content/interviewees.json";
     <BioSection zh={profileZh} en={profileEn} />
     <ExperienceTimeline items={experience} />
     <ExpertiseGrid items={expertise} />
-    <FeaturedWorks works={works} drafts={draftWorks} />
+    <FeaturedWorks works={works} />
     <Interviewees names={interviewees} />
   </main>
   <ContactFooter />
