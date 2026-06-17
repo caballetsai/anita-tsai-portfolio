@@ -8,7 +8,12 @@ const { names } = Astro.props;
     <h2><span data-zh>跨科技、創業、金融與生醫的全球觀察</span><span data-en>Global perspective across technology, entrepreneurship, finance, and biomedicine</span></h2>
     <p><span data-zh>以下名單依英文 Bio 建立；呈現重點是專業觀察範圍，而非名人堆疊。</span><span data-en>The list is sourced from the English bio and framed as a map of Anita's reporting range.</span></p>
   </div>
-  <div class="name-cloud">
-    {names.map((name) => <span>{name}</span>)}
+  <div class="interviewee-grid">
+    {names.map((person) => (
+      <article class="interviewee-card">
+        <h3>{person.name}</h3>
+        <p><span data-zh>{person.title_zh}</span><span data-en>{person.title_en}</span></p>
+      </article>
+    ))}
   </div>
 </section>
