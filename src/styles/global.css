@@ -399,6 +399,20 @@ h3 {
   text-decoration: underline;
 }
 
+.award {
+  padding: 10px 12px;
+  border-left: 3px solid var(--gold);
+  background: rgba(201, 162, 74, 0.12);
+  color: var(--espresso);
+  font-weight: 800;
+}
+
+.pending-link {
+  width: fit-content;
+  color: rgba(58, 46, 42, 0.56);
+  font-weight: 900;
+}
+
 .draft-works {
   margin-top: 56px;
 }
@@ -436,17 +450,27 @@ h3 {
   background: rgba(111, 128, 104, 0.09);
 }
 
-.name-cloud {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+.interviewee-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
 }
 
-.name-cloud span {
-  padding: 10px 14px;
+.interviewee-card {
+  min-height: 118px;
+  padding: 18px;
   border: 1px solid rgba(58, 46, 42, 0.18);
-  border-radius: 999px;
+  border-radius: 8px;
   background: rgba(255, 250, 242, 0.82);
+}
+
+.interviewee-card h3 {
+  font-size: 20px;
+}
+
+.interviewee-card p {
+  margin: 8px 0 0;
+  color: var(--sage);
   font-weight: 800;
 }
 
@@ -467,6 +491,13 @@ h3 {
 
 .footer .button.primary {
   border-color: var(--paper);
+}
+
+.footer-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
 }
 
 .footer h2 {
@@ -510,6 +541,10 @@ h3 {
     max-height: 420px;
   }
 
+  .interviewee-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .masonry {
     column-count: 2;
   }
@@ -545,5 +580,9 @@ h3 {
 
   .masonry {
     column-count: 1;
+  }
+
+  .interviewee-grid {
+    grid-template-columns: 1fr;
   }
 }
