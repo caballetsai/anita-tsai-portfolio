@@ -1,13 +1,68 @@
 [
-  "Sir James Dyson",
-  "Mikael Hed",
-  "Travis Kalanick",
-  "Yuri Milner",
-  "Will.I.am",
-  "Nicholas Woodman",
-  "Peter Grauer",
-  "Phillip A. Sharp",
-  "Craig Venter",
-  "Robert S. Langer",
-  "Noubar Afeyan"
+  {
+    "name": "Sir James Dyson",
+    "title_zh": "Dyson 創辦人",
+    "title_en": "Founder, Dyson",
+    "organization": "Dyson"
+  },
+  {
+    "name": "Mikael Hed",
+    "title_zh": "Rovio 共同創辦人、前執行長",
+    "title_en": "Co-founder and former CEO, Rovio",
+    "organization": "Rovio"
+  },
+  {
+    "name": "Travis Kalanick",
+    "title_zh": "Uber 共同創辦人",
+    "title_en": "Co-founder, Uber",
+    "organization": "Uber"
+  },
+  {
+    "name": "Yuri Milner",
+    "title_zh": "DST Global 創辦人",
+    "title_en": "Founder, DST Global",
+    "organization": "DST Global"
+  },
+  {
+    "name": "Will.I.am",
+    "title_zh": "音樂人、創業者",
+    "title_en": "Musician and entrepreneur",
+    "organization": "i.am+"
+  },
+  {
+    "name": "Nicholas Woodman",
+    "title_zh": "GoPro 創辦人、執行長",
+    "title_en": "Founder and CEO, GoPro",
+    "organization": "GoPro"
+  },
+  {
+    "name": "Peter Grauer",
+    "title_zh": "Bloomberg 董事長",
+    "title_en": "Chairman, Bloomberg",
+    "organization": "Bloomberg"
+  },
+  {
+    "name": "Phillip A. Sharp",
+    "title_zh": "1993 年諾貝爾生理學或醫學獎得主",
+    "title_en": "1993 Nobel Laureate in Physiology or Medicine",
+    "organization": "MIT"
+  },
+  {
+    "name": "Craig Venter",
+    "title_zh": "Human Longevity Inc. 執行長",
+    "title_en": "CEO, Human Longevity Inc.",
+    "organization": "Human Longevity Inc."
+  },
+  {
+    "name": "Robert S. Langer",
+    "title_zh": "MIT David H. Koch Institute Professor",
+    "title_en": "David H. Koch Institute Professor, MIT",
+    "organization": "MIT"
+  },
+  {
+    "name": "Noubar Afeyan",
+    "title_zh": "Flagship Pioneering 創辦人、執行長",
+    "title_en": "Founder and CEO, Flagship Pioneering",
+    "organization": "Flagship Pioneering"
+  }
 ]

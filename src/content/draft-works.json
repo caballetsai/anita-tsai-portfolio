@@ -1,14 +1,5 @@
 [
   {
-    "title_zh": "太空商機",
-    "title_en": "Space Business",
-    "category": "technology",
-    "publication": "商業周刊 Business Weekly",
-    "cover_image": "assets/covers/technology-slide-02-image14.webp",
-    "source_note": "PPT cover image; URL and authorship pending verification.",
-    "needs_verification": true
-  },
-  {
     "title_zh": "聲控經濟",
     "title_en": "Voice Economy",
     "category": "technology",
@@ -32,15 +23,6 @@
     "category": "vr-blockchain-metaverse",
     "publication": "商業周刊 Business Weekly",
     "cover_image": "assets/covers/vr-blockchain-metaverse-slide-03-image20.webp",
-    "source_note": "PPT cover image; URL and authorship pending verification.",
-    "needs_verification": true
-  },
-  {
-    "title_zh": "超貨幣",
-    "title_en": "Super Currency",
-    "category": "vr-blockchain-metaverse",
-    "publication": "商業周刊 Business Weekly",
-    "cover_image": "assets/covers/vr-blockchain-metaverse-slide-03-image21.webp",
     "source_note": "PPT cover image; URL and authorship pending verification.",
     "needs_verification": true
   },
@@ -105,15 +87,6 @@
     "publication": "商業周刊 Business Weekly",
     "cover_image": "assets/covers/finance-macro-slide-05-image36.webp",
     "source_note": "PPT cover image; URL and authorship pending verification.",
-    "needs_verification": true
-  },
-  {
-    "title_zh": "藥命危機",
-    "title_en": "The Security Crisis in Taiwan's Generic Drug",
-    "category": "biotech-healthcare",
-    "publication": "財訊 Wealth Magazine",
-    "cover_image": "assets/covers/biotech-healthcare-slide-06-image37.webp",
-    "source_note": "PPT cover image and English bio award note; external URL pending verification.",
     "needs_verification": true
   },
   {
