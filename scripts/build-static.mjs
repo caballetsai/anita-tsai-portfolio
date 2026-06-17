@@ -113,8 +113,8 @@ const html = `<!doctype html>
     <section class="section" id="works">
       <div class="section-head">
         <p class="section-kicker">Featured Works / 得意作品</p>
-        <h2>${lang("已驗證作品", "Verified works")}</h2>
-        <p>${lang("只有能回溯標題、作者與外部頁面的作品會顯示連結。", "Links appear only when title, authorship, and external source have been verified.")}</p>
+        <h2>${lang("得獎與代表作品", "Award-Winning and Featured Works")}</h2>
+        <p>${lang("這裡優先呈現 Anita 指定的得意作品；有公開頁面的作品會顯示連結，尚未補上公開連結的作品不放假連結。", "This section prioritizes Anita's selected works. Public links appear when available; works without confirmed URLs are shown without fake links.")}</p>
       </div>
       <div class="work-grid verified">
         ${works.map((work) => `<article class="work-card">
@@ -122,8 +122,9 @@ const html = `<!doctype html>
           <div class="work-copy">
             <p class="meta">${esc(work.publication)} · ${work.issue ? `Issue ${esc(work.issue)}` : esc(work.year)}</p>
             <h3>${lang(work.title_zh, work.title_en)}</h3>
+            ${work.award_zh ? `<p class="award">${lang(work.award_zh, work.award_en)}</p>` : ""}
             <p>${lang(work.short_description_zh, work.short_description_en)}</p>
-            <a href="${esc(work.external_url)}" target="_blank" rel="noreferrer">${lang("查看作品", "Read article")}</a>
+            ${work.external_url ? `<a href="${esc(work.external_url)}" target="_blank" rel="noreferrer">${lang("查看作品", "Read article")}</a>` : `<p class="pending-link">${lang("公開連結待補", "Public link pending")}</p>`}
             <p class="source">${esc(work.source_note)}</p>
           </div>
         </article>`).join("")}
@@ -148,17 +149,20 @@ const html = `<!doctype html>
         <h2>${lang("跨科技、創業、金融與生醫的全球觀察", "Global perspective across technology, entrepreneurship, finance, and biomedicine")}</h2>
         <p>${lang("以下名單依英文 Bio 建立；呈現重點是專業觀察範圍，而非名人堆疊。", "The list is sourced from the English bio and framed as a map of Anita's reporting range.")}</p>
       </div>
-      <div class="name-cloud">${interviewees.map((name) => `<span>${esc(name)}</span>`).join("")}</div>
+      <div class="interviewee-grid">${interviewees.map((person) => `<article class="interviewee-card"><h3>${esc(person.name)}</h3><p>${lang(person.title_zh, person.title_en)}</p></article>`).join("")}</div>
     </section>
   </main>
   <footer class="footer" id="contact">
     <div>
       <p class="section-kicker">Contact / 聯絡</p>
       <h2>${lang("保持專業、保留邊界", "Professional contact, with privacy intact")}</h2>
-      <p>${lang("本網站暫不公開私人 email 或電話。可先透過 LinkedIn 或公開作者頁補充。", "Private email and phone are intentionally omitted. LinkedIn or public author pages can be added here.")}</p>
+      <p>${lang("本網站不公開私人 email 或電話。可透過 LinkedIn 或 Facebook 聯絡。", "Private email and phone are intentionally omitted. Please connect through LinkedIn or Facebook.")}</p>
       <p class="source">© ${new Date().getFullYear()} Anita Tsai. Image credits: user-provided PPT and profile photo; publication marks remain on original covers.</p>
     </div>
-    <a class="button primary" href="https://www.linkedin.com/in/anita-tsai-a547b89" target="_blank" rel="noreferrer">LinkedIn</a>
+    <div class="footer-actions">
+      <a class="button primary" href="https://www.linkedin.com/in/anita-tsai-a547b89" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a class="button primary" href="https://www.facebook.com/anita.c.h.tsai/" target="_blank" rel="noreferrer">Facebook</a>
+    </div>
   </footer>
   <script>
     const root = document.documentElement;
