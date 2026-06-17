@@ -8,13 +8,12 @@ const base = process.env.PUBLIC_BASE_PATH || "./";
 const asset = (value) => `${base}${value}`.replace(/([^:]\/)\/+/g, "$1");
 const readJson = async (file) => JSON.parse(await readFile(path.join(src, "content", file), "utf8"));
 
-const [profileZh, profileEn, experience, expertise, works, draftWorks, interviewees] = await Promise.all([
+const [profileZh, profileEn, experience, expertise, works, interviewees] = await Promise.all([
   readJson("profile.zh.json"),
   readJson("profile.en.json"),
   readJson("experience.json"),
   readJson("expertise.json"),
   readJson("works.json"),
-  readJson("draft-works.json"),
   readJson("interviewees.json"),
 ]);
 
@@ -128,19 +127,6 @@ const html = `<!doctype html>
             <p class="source">${esc(work.source_note)}</p>
           </div>
         </article>`).join("")}
-      </div>
-      <div class="draft-works">
-        <div class="section-head compact">
-          <h2>${lang("待驗證封面資料", "Cover candidates pending verification")}</h2>
-          <p>${lang("這些來自使用者提供 PPT，尚未確認公開 URL 與作者資訊，因此不提供外部連結。", "These are extracted from the user-provided PPT. External URLs and authorship still need verification, so no outbound links are shown.")}</p>
-        </div>
-        <div class="masonry">
-          ${draftWorks.map((work) => `<article class="draft-card">
-            <img src="${asset(work.cover_image)}" alt="${esc(work.title_en)} cover candidate from PPT" loading="lazy">
-            <h3>${lang(work.title_zh, work.title_en)}</h3>
-            <p>${esc(work.publication)}</p>
-          </article>`).join("")}
-        </div>
       </div>
     </section>
     <section class="section interview-section" id="interviews">
